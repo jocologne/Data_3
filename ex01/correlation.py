@@ -10,7 +10,7 @@ def main():
         res[col] = {"correlation": cor, "p_value": pv}
     res = dict(sorted(res.items(), key=lambda item: abs(item[1]["correlation"]), reverse=True))
     for key, value in res.items():
-        print(f"{key}: {value['correlation']:.4f},    {value['p_value']:.4e}")
+        print(f"{key}: {value['correlation']:.4f}")
 
 if __name__ == "__main__":
     main()
